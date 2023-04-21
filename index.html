@@ -4,162 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulários</title>
+    <title>Pagina de tributo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Formulários em HTML</h2>
-    <!--Primeiro formulario-->
-    <!--Atributos do formulário-->
- <form action="register.php" method="GET">
-    <div>
-    <label>Nome:</label>
-    <input type="text"/>
-</div>
-<!--Novo input atributo name-->
-<div>
-    <!--Atributo label-->
-  <label for="age">Idade</label>
-  <input type="text" name="age"/>
-</div>
-<!--select-->
-<div>
-<label for="job">Selecione a sua profissão</label>
-<select name="job">
-    <option value="programador">Programador</option>
-    <option value="programador">Tester/QA</option>
-    <option value="programador">DevOps</option>
-    <option value="programador">Outra</option>
-</select>
-</div>
-<!--Atributo selectd-->
-<div>
-    <label for="contract">Você leu os termos de contrato?</label>
-    <select name="contract">
-        <option value="sim">Sim</option>
-        <option value="não" selected>Não</option>
-    </select>
-</div>
+    <div class="container">
+        <!--Cabeçalho-->
+        <h1 class="main-tittle">The offspring</h1>
+        <p class="main-paragraph">Uma banda de rock formada na california</p>
+    </div>
+    <!--Imagem de destaque-->
+    <div class="featured-image">
+        <figure>
+            <img src="img/7.jpg" alt="sla">
+            <figcaption>Integrantes da banda</figcaption>
+        </figure>
+    </div>
 
-<!--Multiplas opções-->
-<div>
-    <label for="items">Selecione os itens desejados</label>
-    <select name="items" multiple>
-<option value="pera">Pera</option>
-<option value="feijao">Feijão</option>
-<option value="arroz">Arroz</option>
-<option value="milho">Milho</option>
-    </select>
-</div>
-<!--Textarea-->
-<div>
-    <label for="comment">Escreva a baixo o que vc achou:</label>
-     <textarea name="comment"></textarea>
-</div>
-<!--fieldset e legend-->
-<div>
-    <fieldset>
-        <legend>Preencha as suas informações</legend>
-        <label for="firstname">Nome:</label>
-        <input type="text" name="firstname">
-        <label for="lastname">Sobrenome:</label>
-        <input type="text" name="lastname">
-    </fieldset>
-</div>
-<!--datalist-->
-<div>
-    <label for="flavor">Escolha o sabor:</label>
-    <input type="text" list="flavors" name="flavor">
-      
-    <datalist id="flavors">
-         <option value="Cereja"></option>
-         <option value="Morango"></option>
-         <option value="Abacaxi"></option>
-         <option value="Chocolate"></option>
-    </datalist>
-</div>
-<!--senha-->
-<div>
-    <label for="password">Digite a sua senha</label>
-    <input type="password" name="password">
-</div>
-<!--radio bottom-->
-<div>
-    <label for="car_model">Escolha o modelo do seu carro</label>
-    <div class="radio">
-        <input type="radio" value="bmw" name="car_model">
-        <label for="bmw">BMW</label>
-    </div>
-    <div class="radio">
-        <input type="radio" value="ferrari" name="car_model">
-        <label for="ferrari">Ferrari</label>
-    </div>
-    <div class="radio">
-        <input type="radio" value="Reanault" name="car_model">
-        <label for="reanault">Reanault</label>
-    </div>
-</div>
-<!--Checkbox-->
-<div>
-    <label for="optionals">Opcionais do carro:</label>
-    <div class="radio">
-        <input type="checkbox" name="optionals[]" value="big_tires">
-        <label for="big_tires">Pneus grandes</label>
-    </div>
-    <div class="radio">
-        <input type="checkbox" name="optionals[]" value="turbo_engine">
-        <label for="turbo_engine">Motor turbo</label>
-    </div>
-    <div class="radio">
-        <input type="checkbox" name="optionals[]" value="hibrido">
-        <label for="hibrido">Hibrido</label>
-    </div>
-</div>
-<!--Datas-->
-<div>
-    <label for="birthay">Data de nascimento</label>
-    <input type="date" name="birthay">
-</div>
-<!--envio de arquivos-->
-<div>
-    <label for="image">Insira a sua imagem</label>
-    <input type="file" name="image">
-</div>
-<!--numeros-->
-<div>
-    <label for="slary">Quanto vc gganha no seu trabalho</label>
-    <input type="number" name="salary">
-</div>
-<!--input para emails-->
-<div>
-    <label for="email">Insira o seu email</label>
-    <input type="email" name="email">
-</div>
-<!--Atributo value-->
-<div>
-    <label for="value">Digite algum valor</label>
-    <input type="text" value="O meu valor é este " name="value">
-</div>
-<!--disabled-->
-<div>
-  <p>Tente mudar o valor</p>
-  <input type="text" disabled>
-</div>
-<!--placeholder-->
-<div>
-    <label for="informacao">Escreva alguma coisa</label>
-    <input type="text" placeholder="Escreva o que pensa">
-</div>
-<!--Atributo required-->
-<div>
-    <label for="birthyear">Ano de nascimento:</label>
-    <input type="text" placeholder="Digite o ano em que vc nasceu" required>
-</div>
-<!--Reiniciando formulário-->
-<input type="reset" value="Limpar">
+    <!--Biografia-->
+    <div class="biography-container">
+        <h2>Sobre os anos iniciais da banda</h2>
+        <p>Este trabalho tem como objetivo 
+            <span class="bold"> explorar a origem e a evolução da internet</span>, discutir suas principais
+            vantagens e desvantagens e refletir sobre o papel que ela desempenha na sociedade contemporânea.
+            Além disso, será discutido como a internet tem influenciado a forma como as empresas operam, a
+            maneira como as pessoas se comunicam e se relacionam e como ela tem transformado a natureza do
+            comércio e do entretenimento</p>
 
-<!--Envio de formulário-->
-<input type="submit" value="Enviar">
- </form>
+        </p> <span class="bold">vantagens e desvantagens</span> e refletir sobre o papel que ela desempenha na sociedade contemporânea.
+            Além disso, será discutido como a internet tem influenciado a forma como as empresas operam, a
+            maneira como as pessoas se comunicam e se relacionam e como ela tem transformado a natureza do
+            comércio e do entreten</p>
+
+            <p> vantagens e desvantagens e refletir sobre o papel que ela desempenha na sociedade contemporânea.
+                <span class="bold">Além disso, será discutido como</span> a internet tem influenciado a forma como as empresas operam, a
+                maneira como as pessoas se comunicam e se relacionam e como ela tem transformado a natureza do
+                comércio e do entreten</p>
+    </div>
+
+    <!--container de citação-->
+    <div class="quotes-conteiner">
+        <blockquote>
+            "LJAJKAHASSAJYIGWTYyiwsykshuio"
+        </blockquote>
+        <p>DEghshgdkaJÇ</p>
+    </div>
+
+    <!--Curiosidade-->
+    <div class="curiosidade-container">
+        <h2>Curiosidades da banda</h2>
+        <ul>
+            <li>não daria certo</li>
+            <li>os apelidos</li>
+            <li>há <span class="bold">pilotos</span> licenciados</li>
+            <li>sem publicidades</li>
+            <li>carros</li>
+        </ul>
+
+        <!--Segunda citação-->
+        <div class="quotes-container2">
+            <blockquote>
+                hdsahkhadshd <br />
+                jsajlakyewuewdn <br />
+                eljdlwedweudow <br />
+                dnwhduwiuqdwq <br />
+            </blockquote>
+            <p>Nome da musica</p>
+        </div>
+        <!--segunda imagem-->
+        <div class="img-bold">
+            <figure>
+                <img src="img/8.jpg" alt="Nome da musica">
+                <figcaption>Discrição da imagem</figcaption>
+            </figure>
+        </div>
+        <!--Mais informações-->
+        <div class="moreinfo container">
+            <h2>Mais informações:</h2>
+        <p>Vovehhsjsdjgewkyytehat <a href="http://pt.wikipedia.org/wiki/Cancao"> Clicando aqui! </a> </p>
+        </div>
+    </div>
 </body>
 </html>
